@@ -37,7 +37,7 @@ def S(b,n):
   # this is true if we've been given back a solved board, so keep returning it
   if t:return t
 
-  # if we reach here, we've failed and return None
+ # if the loop finishes and we reach here, we've failed and return None
 
 
 # start solving from the first position
