@@ -1,7 +1,7 @@
 import sys
 R=0,1,2
 
-# v returns true iif no character beside '0' appears 0 or 1 time
+# v returns true iif no character beside '0' appears more than once
 def v(b):x=filter('0'.__ne__,b);return len(x)==len(set(x))
 
 def S(b,n):
