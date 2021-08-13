@@ -1,0 +1,18 @@
+= Simple code golfing Sudoku solver in Python
+
+A a while ago (about 6 years) I decided to try to code golf a Sudoku solver in Python. This is the
+result.
+
+The `sudoku.py` file is partially minimized (short variable names) but with some comments and
+saving. While `sudoku_min.py` is minified by hand, for now. Run them by, for example:
+
+----
+$ python sudoku.py 123456789456789123789123456000000000000000000000000000000000000000000000000000000
+123456789456789123789123456214365897365897214897214365531642978642978531978531642
+
+# This one takes quite a while for my solver, almost a minute using a recent PyPy
+$ python sudoku.py 850002400720000009004000000000107002305000900040000000000080070017000000000036040
+859612437723854169164379528986147352375268914241593786432981675617425893598736241
+----
+
+and it prints the solution it found.
