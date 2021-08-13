@@ -25,20 +25,12 @@ def S(b,n):
   for x in R:
    for y in R:u=x*3+y*27;t=v(b[u:u+3]+b[u+9:u+12]+b[u+18:u+21])and t
 
-  # check if the board is valid
-  if t:
-
-   # if the board is valid and no '0's are in it, then we've solved it and return the board
-   if'0'not in b:return b
-
-   # otherwise, start filling in the next position
-   t=S(b,n+1)
-
-  # this is true if we've been given back a solved board, so keep returning it
-  if t:return t
+  # check if the board is not valid, then return None
+  # otherweise start filling in the next position if not finished
+  # and if the board is valid and no '0's are in it, then we've solved it and exit w/ printing it
+  t=t and (S(b,n+1) if'0'in b else exit(''.join(b)))
 
  # if the loop finishes and we reach here, we've failed and return None
 
-
 # start solving from the first position
-print(''.join(S(sys.argv[1],0)))
+S(sys.argv[1],0)
