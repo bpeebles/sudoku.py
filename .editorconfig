@@ -1,0 +1,38 @@
+
+# http://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{py,rst,ini,adoc,asciidoc}]
+indent_style = space
+indent_size = 4
+
+[*.{adoc,asciidoc}]
+max_line_length=100
+
+[*.py]
+max_line_length=100
+
+# isort settings
+line_length=100
+multi_line_output=2
+default_section=THIRDPARTY
+
+[*.js]
+max_line_length=100
+
+[*.{html,css,scss,json,yml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
