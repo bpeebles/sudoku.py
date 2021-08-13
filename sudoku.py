@@ -2,7 +2,7 @@ import sys
 R=0,1,2
 
 # v returns true iif no character beside '0' appears more than once
-def v(b):x=filter('0'.__ne__,b);return len(x)==len(set(x))
+def v(b):x=list(filter('0'.__ne__,b));return len(x)==len(set(x))
 
 def S(b,n):
  """Given b, a board as a string or list (len(b)==81), and n as the starting point in the board,
@@ -41,4 +41,4 @@ def S(b,n):
 
 
 # start solving from the first position
-print''.join(S(sys.argv[1],0))
+print(''.join(S(sys.argv[1],0)))
