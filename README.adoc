@@ -16,3 +16,9 @@ $ python sudoku.py 8500024007200000090040000000001070023050009000400000000000800
 ----
 
 and it prints the solution it found.
+
+== Size
+
+As of when this README was last updated, the minified version is 375 bytes. The smallest I could
+find is 169 bytes at https://blog.singleton.io/sudoku/[ShortestSudokuSolver]. But I'm still fairly
+happy with it overall.
