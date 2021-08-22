@@ -22,3 +22,12 @@ and it prints the solution it found.
 As of when this README was last updated, the minified version is 375 bytes. The smallest I could
 find is 169 bytes at https://blog.singleton.io/sudoku/[ShortestSudokuSolver]. But I'm still fairly
 happy with it overall.
+
+== Read more
+
+I wrote up a https://www.byronpeebles.com/blog/2021/small-sudoku-solver-in-python/[small blog post
+about this as well].
+
+== Author
+
+Byron Peebles,  2015–2021.
