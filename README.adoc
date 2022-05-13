@@ -4,7 +4,7 @@ A while ago (back in 2015) I decided to try to code golf a Sudoku solver in Pyth
 result.
 
 The `sudoku.py` file is partially minimized (short variable names) but with some comments and
-saving. While `sudoku_min.py` is minified by hand, for now. Run them by, for example:
+spacing. While `sudoku_min.py` is minified by hand, for now. Example runs:
 
 ----
 $ python sudoku.py 123456789456789123789123456000000000000000000000000000000000000000000000000000000
